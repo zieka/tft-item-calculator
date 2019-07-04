@@ -4,6 +4,8 @@ module.exports = {
     description: `Find your potential items`,
     author: `@zieka`
   },
+  // this is for gh-page deployment
+  pathPrefix: '/tft-item-calculator',
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
