@@ -8,21 +8,20 @@ export const ItemSelection: FunctionComponent = () => {
     return () => addItem(item);
   };
   return (
-    <>
-      <h2 className="f4 lh-copy mt0 mb4 measure">Add Base Items:</h2>
+    <div className="mb3">
+      <h2 className="f3 lh-title mt0 mb4 measure">Add Base Items:</h2>
       <div className="flex flex-wrap items-center justify-around">
         {baseItems.map(item => (
-          <div onClick={handleClick(item)}>
+          <div onClick={handleClick(item)} key={item.name}>
             <img
               className="mh3 pointer br4"
               src={item.imageUrl}
               title={`${item.name}\n${item.description}`}
               alt={item.name}
-              key={item.name}
             />
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };

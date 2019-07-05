@@ -1,7 +1,7 @@
 import React, { Component, MouseEvent } from 'react';
 import { BaseItem, CompoundItem } from '../helpers/items';
 
-type InventoryItem = BaseItem | CompoundItem;
+export type InventoryItem = BaseItem;
 
 interface State {
   items: InventoryItem[];

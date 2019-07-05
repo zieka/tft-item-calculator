@@ -1,5 +1,4 @@
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React, { FunctionComponent } from 'react';
 
 type HeaderProps = {
@@ -20,7 +19,7 @@ export const Header: FunctionComponent<HeaderProps> = ({ siteTitle = '' }) => (
         padding: `1.45rem 1.0875rem`
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 className="center mh0 tc">
         <Link
           to="/"
           style={{
